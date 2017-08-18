@@ -1,0 +1,25 @@
+{
+  "name": "wechat-richtext",
+  "version": "1.0.0",
+  "description": "wechat html to rict-text component data format parser",
+  "main": "wechat-richtext.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eatgrass/wechat-richtext.git"
+  },
+  "keywords": [
+    "wechat",
+    "html",
+    "richtext",
+    "parser"
+  ],
+  "author": "eatgrass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eatgrass/wechat-richtext/issues"
+  },
+  "homepage": "https://github.com/eatgrass/wechat-richtext#readme"
+}
