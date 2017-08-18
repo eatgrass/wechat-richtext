@@ -1,6 +1,10 @@
 # wechat-richtext
 
-HTML转微信小程序<rich-text>组件数据
+HTML转微信小程序`<rich-text>`组件数据
+
+```
+npm install wechat-richtext --save
+```
 
 ```
 const wrapperHTML = document.querySelector('wrapper');
