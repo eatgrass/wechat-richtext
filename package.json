@@ -1,6 +1,6 @@
 {
   "name": "wechat-richtext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wechat html to rict-text component data format parser",
   "main": "wechat-richtext.js",
   "scripts": {

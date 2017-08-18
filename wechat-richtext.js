@@ -87,6 +87,7 @@
 
         const _default = {
             useClass: false,
+            style: {}
         }
 
         const _options = defaults(options, _default)
