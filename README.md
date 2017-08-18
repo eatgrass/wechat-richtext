@@ -8,7 +8,7 @@ HTML转微信小程序`<rich-text>`组件数据
 npm install wechat-richtext --save
 ```
 
-```
+```javascript
 const wrapperHTML = document.querySelector('wrapper');
 
 const parser = WechatRichText({
