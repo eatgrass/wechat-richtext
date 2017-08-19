@@ -87,6 +87,7 @@
 
         const _default = {
             useClass: false,
+            useStyle: false,
             style: {}
         }
 

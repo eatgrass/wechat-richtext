@@ -12,9 +12,13 @@ npm install wechat-richtext --save
 const wrapperHTML = document.querySelector('.wrapper'); //包含富文本内容的HTML节点
 
 const parser = WechatRichText({
-  'useClass': false,  // 是否包含class属性
-  'style': {
-    'span': 'font-size:14px' // 自定义内联样式
+  'useStyle': true, // 是否包含原始内联style
+  'useClass': false,  // 是否包含原始class
+  'style': { // 自定义内联样式, useStyle
+    'span': 'font-size:14px' 
+  },
+  'class': { // 自定义标签的class名，将覆盖useClass
+    'p': 'text' 
   }
 });
 
