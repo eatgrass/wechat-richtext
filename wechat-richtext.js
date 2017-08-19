@@ -88,7 +88,8 @@
         const _default = {
             useClass: false,
             useStyle: false,
-            style: {}
+            style: {},
+            class: {},
         }
 
         const _options = defaults(options, _default)
@@ -132,13 +133,22 @@
             let attrs = {};
             while (++i < length) {
                 let attr = node.attributes[i];
-                if ((supportedAttrs[node.localName] && supportedAttrs[node.localName].includes(attr.name)) || (_options.useClass && attr.name === 'class')) {
+                if ((supportedAttrs[node.localName] && supportedAttrs[node.localName].includes(attr.name)) ||
+                     (_options.useClass && attr.name === 'class') ||
+                     (_options.useStyle && attr.name === 'style')
+                ) {
                     attrs[attr.name] = attr.nodeValue;
                 }
             }
+
             if (_options.style[node.localName]) {
                 attrs.style = _options.style[node.localName];
             }
+
+            if (_options.class[node.localName]) {
+                attrs.class = _options.class[node.localName];
+            }
+            
             return attrs;
         }
 
