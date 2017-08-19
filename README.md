@@ -14,7 +14,7 @@ const wrapperHTML = document.querySelector('.wrapper'); //包含富文本内容�
 const parser = WechatRichText({
   'useStyle': true, // 是否包含原始内联style
   'useClass': false,  // 是否包含原始class
-  'style': { // 自定义内联样式, useStyle
+  'style': { // 自定义内联样式, 将覆盖useStyle
     'span': 'font-size:14px' 
   },
   'class': { // 自定义标签的class名，将覆盖useClass
